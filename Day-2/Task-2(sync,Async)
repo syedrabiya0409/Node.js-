@@ -1,0 +1,28 @@
+Synchronous: Code runs line by line, blocking the next line until the current line finishes.
+Example:
+
+console.log("Start");
+console.log("End");
+
+
+Output:
+
+Start
+End
+
+-------------------------------
+Asynchronous: Code can start an operation and move on without waiting for it to finish. The result comes later through callbacks, promises, or async/await.
+Example:
+
+console.log("Start");
+setTimeout(() => {
+  console.log("Inside Timeout");
+}, 1000);
+console.log("End");
+
+
+Output:
+
+Start
+End
+Inside Timeout
